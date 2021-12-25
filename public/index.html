@@ -6,12 +6,28 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      @font-face { 
+        font-family: Abel-Regular;
+        src: url('fonts/Abel-Regular.ttf');
+      }
+
+      @font-face { 
+        font-family: Cabin-Regular;
+        src: url('fonts/Cabin-Regular.ttf');
+      }
+
+      body {
+        background-color:#e6e6e6;
+      }
+    </style>
   </head>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <!-- built files will be auto injected -->
   </body>
 </html>
